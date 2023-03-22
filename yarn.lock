@@ -1677,10 +1677,25 @@
     react-remove-scroll "^2.5.5"
     react-textarea-autosize "8.3.4"
 
+"@mantine/ds@^6.0.4":
+  version "6.0.4"
+  resolved "https://registry.yarnpkg.com/@mantine/ds/-/ds-6.0.4.tgz#3641317d95cdc9bf1aeadb5bbb4d5b5eab32055f"
+  integrity sha512-/el8XDd7Gxm9HWoYeGNca/bPdn08PAn91BG+HIw06U1XnizzSsdKtjFoZI4IYo+5eq/edIJXmS9V4rz41MZf0g==
+  dependencies:
+    "@mantine/utils" "6.0.4"
+
 "@mantine/hooks@^6.0.2":
   version "6.0.2"
   resolved "https://registry.yarnpkg.com/@mantine/hooks/-/hooks-6.0.2.tgz#88433aade23237c1566a083b80e6620eaa932561"
   integrity sha512-wLSkp0NRe4XN7JujIUvkKghIBJC9YZ33CJlrFbcBFLD6LiSLX7lWyWOsiFzXrPND0Hpgn3AjckFQGblA8n34XA==
+
+"@mantine/prism@^6.0.4":
+  version "6.0.4"
+  resolved "https://registry.yarnpkg.com/@mantine/prism/-/prism-6.0.4.tgz#d7e75223fc1d3c878b780c1dc6a5eec16329171d"
+  integrity sha512-oUf8bPXE3Y2mKGnx+bdX+jwW/HF20GG7fLw6Kv4ivptb1b5eaKQHH4/UaubdELboBQk66LVW6pPNV6GPyBCKWg==
+  dependencies:
+    "@mantine/utils" "6.0.4"
+    prism-react-renderer "^1.2.1"
 
 "@mantine/styles@6.0.2":
   version "6.0.2"
@@ -1690,10 +1705,23 @@
     clsx "1.1.1"
     csstype "3.0.9"
 
+"@mantine/styles@^6.0.4":
+  version "6.0.4"
+  resolved "https://registry.yarnpkg.com/@mantine/styles/-/styles-6.0.4.tgz#c76db96cda89de271f1a1bfcdb328aa093d2cc5b"
+  integrity sha512-DbyshlwoCjn3Yw2iMNzo1fv+3TJcZgwjB86JvxcfjJwz6Br5IzsVlJPcK9kcTbzvcN1kMT07y5aK+3pZv7qBFw==
+  dependencies:
+    clsx "1.1.1"
+    csstype "3.0.9"
+
 "@mantine/utils@6.0.2":
   version "6.0.2"
   resolved "https://registry.yarnpkg.com/@mantine/utils/-/utils-6.0.2.tgz#06da9dfb390a026e005f7e2712a3a30373a2b4c3"
   integrity sha512-fx+cmkb8PMpkr65nUs8YgaXFJbtNY+ybSXDfBxwFAWMTLAocbNo7vjkSvPWZVS1O2szPK/s4Rqdw0W76dyG4+w==
+
+"@mantine/utils@6.0.4":
+  version "6.0.4"
+  resolved "https://registry.yarnpkg.com/@mantine/utils/-/utils-6.0.4.tgz#e4a265bf135124915f4b218954c9a4533e392681"
+  integrity sha512-oggRX3fC/tsoxEaxJ+3DhFpb4D4YeCg5XvueGsX3AuoHY87bypaI3JyvFbSIV8oLMW6B/heHNu6VPHVSnrim9A==
 
 "@modulz/radix-icons@^4.0.0":
   version "4.0.0"
@@ -2016,6 +2044,19 @@
     "@svgr/plugin-jsx" "^5.5.0"
     "@svgr/plugin-svgo" "^5.5.0"
     loader-utils "^2.0.0"
+
+"@tabler/icons-react@^2.11.0":
+  version "2.11.0"
+  resolved "https://registry.yarnpkg.com/@tabler/icons-react/-/icons-react-2.11.0.tgz#18d512830e4e9fabe425177fa968136efa7ea372"
+  integrity sha512-Mbie8IFLrtI0sGm802Bmierle0ixIi7FVczShoLjPZwRM0da1HcD588TF7oMuQ09zd241BY+L7M/f0Q6lquBng==
+  dependencies:
+    "@tabler/icons" "2.11.0"
+    prop-types "^15.7.2"
+
+"@tabler/icons@2.11.0":
+  version "2.11.0"
+  resolved "https://registry.yarnpkg.com/@tabler/icons/-/icons-2.11.0.tgz#9767f2bb57a716ed71fdc5019ca534d5fddcc816"
+  integrity sha512-KPESQnvHoSpbAdgzDdrSmeZ9AE8fSU12fU3Cag79uXJCUkC8f741fcvPJPsFMDe0S96VSq3mMYF8JnA7a570uQ==
 
 "@tauri-apps/api@^1.2.0":
   version "1.2.0"
@@ -7705,6 +7746,11 @@ pretty-format@^29.0.0, pretty-format@^29.5.0:
     ansi-styles "^5.0.0"
     react-is "^18.0.0"
 
+prism-react-renderer@^1.2.1:
+  version "1.3.5"
+  resolved "https://registry.yarnpkg.com/prism-react-renderer/-/prism-react-renderer-1.3.5.tgz#786bb69aa6f73c32ba1ee813fbe17a0115435085"
+  integrity sha512-IJ+MSwBWKG+SM3b2SUfdrhC+gu01QkV2KmRQgREThBfSQRoufqRfxfHUxpG1WcaFjP+kojcFyO9Qqtpgt3qLCg==
+
 process-nextick-args@~2.0.0:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/process-nextick-args/-/process-nextick-args-2.0.1.tgz#7820d9b16120cc55ca9ae7792680ae7dba6d7fe2"
@@ -7725,7 +7771,7 @@ prompts@^2.0.1, prompts@^2.4.2:
     kleur "^3.0.3"
     sisteransi "^1.0.5"
 
-prop-types@^15.8.1:
+prop-types@^15.7.2, prop-types@^15.8.1:
   version "15.8.1"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.8.1.tgz#67d87bf1a694f48435cf332c24af10214a3140b5"
   integrity sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==

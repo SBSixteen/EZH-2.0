@@ -5,8 +5,12 @@
   "dependencies": {
     "@emotion/react": "^11.10.6",
     "@mantine/core": "^6.0.2",
+    "@mantine/ds": "^6.0.4",
     "@mantine/hooks": "^6.0.2",
+    "@mantine/prism": "^6.0.4",
+    "@mantine/styles": "^6.0.4",
     "@modulz/radix-icons": "^4.0.0",
+    "@tabler/icons-react": "^2.11.0",
     "@tauri-apps/api": "^1.2.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -48,5 +52,9 @@
   },
   "resolutions": {
     "mini-css-extract-plugin": "2.4.7"
-  }
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC"
 }
