@@ -80,11 +80,11 @@ async fn create_user( mail:String, pwd:String ) ->String {
       sub_type: 0,
       datasets: String::from(""),
     };
-    let _users = _firebase.set::<User>(&user);
+    let _users = _firebase.set::<User>(&user).await;
   }
 
   let g =  serde_json::to_string(&R).unwrap();
-  return g.into()
+  return g;
   
 }
 

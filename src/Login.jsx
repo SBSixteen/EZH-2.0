@@ -11,7 +11,6 @@ const invoke = window.__TAURI__.invoke
 const [greetMsg, setGreetMsg] = useState("");
 const [name, setName] = useState("");
 const [password, setPassword] = useState("");
-const [response, setResponse] = useState("");
 const [Remember, setRememberMe] = useState(false);
 const [proceed, setProceed] = useState(false);
 
@@ -65,14 +64,7 @@ return (
           
           <button className="default_m_right" type="submit" onClick={
             ()=>{
-              invoke('create_user', {'mail' : name, 'pwd' : password}).then((message) => setResponse(message))
-              //TODO Make this function blocking
-              console.log("Invoked, Should get a response");
-              console.log(response);
-              
-              var x = JSON.parse(response);
-              setGreetMsg(x.response);
-              //setProceed(x.value);
+
             }
           }> Sign In </button>
           

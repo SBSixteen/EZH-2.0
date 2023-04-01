@@ -11,6 +11,7 @@ function Register() {
   const [emailID, setEmail] = useState("");
   const [name, setName] = useState("");
   const [password, setPassword] = useState("");
+  const [response, setResponse] = useState("");
   const [Remember, setRememberMe] = useState(false);
 
   return (
@@ -74,7 +75,18 @@ function Register() {
 
           <br></br>
 
-          <Button title="Register" />
+          <button className="default_m_right" type="submit" onClick={
+            ()=>{
+            invoke('create_user', {'mail' : emailID, 'pwd' : password}).then((message) => setResponse(message))
+              //TODO Make this function blocking
+              console.log("Invoked, Should get a response");
+              //console.log(response);
+              
+              var x = JSON.parse(response);
+              setGreetMsg(x.response);
+              //setProceed(x.value);
+            }
+          }> Register</button>
 
           <br></br>
         </form>
