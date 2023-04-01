@@ -5,6 +5,7 @@ import "./App.css";
 import "./style.css";
 // import { Button } from "./Components/Button";
 import Button from "./Components/Button/";
+import { resolvePath } from "react-router-dom";
 
 function Register() {
   const [greetMsg, setGreetMsg] = useState("");
@@ -77,14 +78,14 @@ function Register() {
 
           <button className="default_m_right" type="submit" onClick={
             ()=>{
-            invoke('create_user', {'mail' : emailID, 'pwd' : password}).then((message) => setResponse(message))
-              //TODO Make this function blocking
-              console.log("Invoked, Should get a response");
-              //console.log(response);
-              
-              var x = JSON.parse(response);
-              setGreetMsg(x.response);
-              //setProceed(x.value);
+            invoke('create_user', {'mail' : emailID, 'pwd' : password}).then((message) => 
+            {
+            setResponse(message); 
+            console.log(message)
+            var x = JSON.parse(message);
+            setGreetMsg(x.response);
+        })
+
             }
           }> Register</button>
 

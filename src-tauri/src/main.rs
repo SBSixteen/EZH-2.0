@@ -7,8 +7,6 @@ use std::collections::HashMap;
 use firebase_rs::*;
 use serde::{Deserialize, Serialize};
 use sha256::digest;
-
-
 #[derive(Serialize, Deserialize, Debug)]
 struct User {
     email: String,
@@ -84,7 +82,7 @@ async fn create_user( mail:String, pwd:String ) ->String {
   }
 
   let g =  serde_json::to_string(&R).unwrap();
-  return g;
+  return g.into()
   
 }
 
