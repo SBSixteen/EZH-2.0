@@ -6,11 +6,14 @@ import "./style.css";
 // import { Button } from "./Components/Button";
 import Button from "./Components/Button/";
 
+import { resolvePath } from "react-router-dom";
+
 function Register() {
   const [greetMsg, setGreetMsg] = useState("");
   const [emailID, setEmail] = useState("");
   const [name, setName] = useState("");
   const [password, setPassword] = useState("");
+  const [response, setResponse] = useState("");
   const [Remember, setRememberMe] = useState(false);
 
   return (
@@ -73,8 +76,20 @@ function Register() {
           />
 
           <br></br>
-
+          
           <Button title="Register" />
+          <button className="default_m_right" type="submit" onClick={
+            ()=>{
+            invoke('create_user', {'mail' : emailID, 'pwd' : password}).then((message) => 
+            {
+            setResponse(message); 
+            console.log(message)
+            var x = JSON.parse(message);
+            setGreetMsg(x.response);
+        })
+
+            }
+          }> Register</button>
 
           <br></br>
         </form>
@@ -86,3 +101,4 @@ function Register() {
 }
 
 export default Register;
+
