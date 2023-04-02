@@ -1,5 +1,6 @@
 import { useState } from "react";
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import { invoke } from "@tauri-apps/api/tauri";
 import "./App.css";
 import "./style.css"
@@ -13,6 +14,12 @@ const [name, setName] = useState("");
 const [password, setPassword] = useState("");
 const [Remember, setRememberMe] = useState(false);
 const [proceed, setProceed] = useState(false);
+
+let navigate = useNavigate(); 
+const routeChange = () =>{ 
+  let path = `/Register`; 
+  navigate(path);
+}
 
 return (
   
@@ -68,12 +75,11 @@ return (
             }
           }> Sign In </button>
           
-          <button type = "button" onClick ={() =>{
-          }}> Register </button>
+          <button type = "button" onClick= {routeChange}> Register </button>
           
           <br></br>
          
-          <a style={{marginTop: 30 + 'em'}} href="" target="_blank" >
+          <a style={{marginTop: 30 + 'em'}} href="/PassReset" target="_self" >
           Forgot Password?
           </a>
   

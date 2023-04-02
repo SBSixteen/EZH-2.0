@@ -6,7 +6,7 @@ import "./style.css";
 // import { Button } from "./Components/Button";
 import Button from "./Components/Button/";
 
-import { resolvePath } from "react-router-dom";
+import { resolvePath, useNavigate } from "react-router-dom";
 
 function Register() {
   const [greetMsg, setGreetMsg] = useState("");
@@ -77,7 +77,6 @@ function Register() {
 
           <br></br>
           
-          <Button title="Register" />
           <button className="default_m_right" type="submit" onClick={
             ()=>{
             invoke('create_user', {'mail' : emailID, 'pwd' : password}).then((message) => 
@@ -93,6 +92,15 @@ function Register() {
 
           <br></br>
         </form>
+        <div>
+        <a style={{marginTop: 30 + 'em'}} href="/Login" target="_self" onClick={
+            ()=>{
+              
+            }
+          } >
+          Already have an account?
+          </a>
+        </div>
       </div>
 
       <p>{greetMsg}</p>

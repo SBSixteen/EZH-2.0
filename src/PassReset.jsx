@@ -37,7 +37,9 @@ function PassReset() {
           <br></br>
         </form>
       </div>
-
+          <div>          <a style={{marginTop: 30 + 'em'}} href="/Login" target="_self" >
+          Misclick? Return to Login?
+          </a></div>
       <p>{greetMsg}</p>
     </div>
   );
