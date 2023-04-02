@@ -4,15 +4,16 @@ import { invoke } from "@tauri-apps/api/tauri";
 import "./App.css";
 import "./style.css"
 
-
-
 function Login() {
+
+const invoke = window.__TAURI__.invoke
   
 const [greetMsg, setGreetMsg] = useState("");
 const [name, setName] = useState("");
 const [password, setPassword] = useState("");
 const [Remember, setRememberMe] = useState(false);
-    
+const [proceed, setProceed] = useState(false);
+
 return (
   
       <div className="container">
@@ -61,14 +62,18 @@ return (
             Remember Me?</p>
           </div>
           
-          <button className="default_m_right" type="submit"> Sign In </button>
+          <button className="default_m_right" type="submit" onClick={
+            ()=>{
+
+            }
+          }> Sign In </button>
           
           <button type = "button" onClick ={() =>{
           }}> Register </button>
           
           <br></br>
          
-          <a href="" target="_blank">
+          <a style={{marginTop: 30 + 'em'}} href="" target="_blank" >
           Forgot Password?
           </a>
   
