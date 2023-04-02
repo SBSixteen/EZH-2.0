@@ -21,6 +21,8 @@ import {
 } from '@tabler/icons-react';
 import { MantineLogo } from '@mantine/ds';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import PassReset from './PassReset.jsx';
+import PaymentForm from './PaymentForm.jsx';
 
 
 
@@ -98,6 +100,8 @@ function App() {
 <Route path="/Register" element={<Register />} />
 <Route path="/login" element={<Login />}/>
 <Route path="/Home" element={<Home />} />
+<Route path="/PassReset" element={<PassReset />} />
+<Route path="/PaymentForm" element={<PaymentForm />} />
 navigate(path);
    </Routes>
 </BrowserRouter>

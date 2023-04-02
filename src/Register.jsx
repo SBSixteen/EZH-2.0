@@ -5,6 +5,7 @@ import "./App.css";
 import "./style.css";
 // import { Button } from "./Components/Button";
 import Button from "./Components/Button/";
+
 import { resolvePath } from "react-router-dom";
 
 function Register() {
@@ -75,7 +76,8 @@ function Register() {
           />
 
           <br></br>
-
+          
+          <Button title="Register" />
           <button className="default_m_right" type="submit" onClick={
             ()=>{
             invoke('create_user', {'mail' : emailID, 'pwd' : password}).then((message) => 
@@ -99,3 +101,4 @@ function Register() {
 }
 
 export default Register;
+
